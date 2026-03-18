@@ -6,7 +6,7 @@ Autor: Adrián Berenguer
 Fecha: 12/03/2026
 Autor: Adrián Berenguer
 """
-from ClaseGrafo import Grafo
+from ClaseGrafo_2_1_A import Grafo
 import sys
 import os
 import statistics
@@ -39,9 +39,10 @@ def main():
         print("Archivo encontrado con éxito...")
         grafo = Grafo()
         print("Generando grafo...")
-        ok = grafo.grafo_apartir_fichero("Algoritmos/cubos_26.txt")
+        ok = grafo.grafo_apartir_fichero("Algoritmos/github/cubos_26.txt")
         if ok:
             print("Grafo generado con éxito...")
+            print("Ejecutando algoritmo de floyd...")
             grafo.algoritmo_floyd()
             print("\nMostrando algunas estadísticas...")
             grafo.estadisticas()
